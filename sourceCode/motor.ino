@@ -1,21 +1,21 @@
 void M1(int out) {                                // to H-Bridge board
-  //  Serial.print("PWM: ");
-  //  Serial.println(out);
+//  Serial.print("PWM: ");
+//  Serial.println(out);
   if (out > 0) {
-    digitalWrite(inAPin1, HIGH);
-    digitalWrite(inBPin1, LOW);// drive motor CW
+    digitalWrite(inAPin1, LOW);
+    digitalWrite(inBPin1, HIGH);// drive motor CW
     analogWrite(PWMPin1, out);
   }
   else {
-    digitalWrite(inAPin1, LOW);
-    digitalWrite(inBPin1, HIGH);// drive motor CW
+    digitalWrite(inAPin1, HIGH);
+    digitalWrite(inBPin1, LOW);// drive motor CW
     analogWrite(PWMPin1, abs( out));                       // drive motor CCW
   }
 }
 
 void M2(int out) {                                // to H-Bridge board
   //  Serial.print("PWM: ");
-//  Serial.println(out);
+  //  Serial.println(out);
   if (out > 0) {
     digitalWrite(inAPin2, HIGH);
     digitalWrite(inBPin2, LOW);// drive motor CW
@@ -30,7 +30,7 @@ void M2(int out) {                                // to H-Bridge board
 //
 void M3(int out) {                                // to H-Bridge board
   //  Serial.print("PWM: ");
-//  Serial.println(out);
+  //  Serial.println(out);
   if (out > 0) {
     digitalWrite(inAPin3, HIGH);
     digitalWrite(inBPin3, LOW);// drive motor CW

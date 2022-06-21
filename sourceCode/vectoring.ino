@@ -8,9 +8,8 @@ void base1(float magnitude, float theta, int rot, float denta[3])
 
   const float sqrt3o2 = 1.0 * sqrt(3) / 2;
   float v1 = - vel_x + rot;
-  float v2 = 0.5 * vel_x - sqrt3o2 * vel_y + rot;
+  float v2 = 0.5 * vel_x - sqrt3o2 * vel_y  + rot;
   float v3 = 0.5 * vel_x + sqrt3o2 * vel_y + rot;
-
 
   //  d1 = v1 < 0 ? -1 : 1;
   //  d2 = v2 < 0 ? -1 : 1;
