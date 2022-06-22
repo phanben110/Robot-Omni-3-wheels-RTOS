@@ -103,7 +103,7 @@ void setup() {
   M3PID.SetOutputLimits(-255, 255);
   //mpu6050_begin();
   xTaskCreate(TaskLive, "Task1", 256, NULL, 2, &Task_Handle1);
-  //xTaskCreate(TaskCalc, "Task2", 256, NULL, 1, &Task_Handle2);
+  xTaskCreate(TaskUART, "Task2", 256, NULL, 1, &Task_Handle2);
   vTaskStartScheduler();
 }
 
@@ -204,19 +204,19 @@ void TaskLive(void *pvParameters)
     vTaskDelay(1);
   }
 }
-//void TaskCalc(void *pvParameters)
-//{
-//  (void) pvParameters;
-//  unsigned int Frequency = 1;
-//  TickType_t xLastWakeTime;
-//  xLastWakeTime = xTaskGetTickCount();
-//  while (1)
-//  {
-//    Serial.println("Task2");
-//    uart();
-//    //Serial.println(Enable);
-//  }
-//
-//  vTaskDelayUntil(&xLastWakeTime, Frequency);
-//  //vTaskDelay(100);
-//}
+void TaskUART(void *pvParameters)
+{
+ (void) pvParameters;
+ unsigned int Frequency = 1;
+ TickType_t xLastWakeTime;
+ xLastWakeTime = xTaskGetTickCount();
+ while (1)
+ {
+   Serial.println("Task2");
+   uart();
+   //Serial.println(Enable);
+ }
+
+ //vTaskDelayUntil(&xLastWakeTime, Frequency);
+ vTaskDelay(100);
+}
