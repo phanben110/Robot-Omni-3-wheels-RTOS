@@ -54,7 +54,7 @@ PID M2PID(&input2, &output2, &setpoint2, kp2, ki2, kd2, DIRECT);
 PID M3PID(&input3, &output3, &setpoint3, kp3, ki3, kd3, DIRECT);
 
 void TaskLive( void *pvParameters );
-void TaskCalc(void *pvParameters);
+void TaskUART(void *pvParameters);
 //void base1(float magnitude, float theta, int rot, float denta[3]);
 
 int d1;                           // for direction of rotation of motors
@@ -69,7 +69,7 @@ float vel_y;
 float theta;
 int magnitude , countNPN ;
 TaskHandle_t Task_Handle1;
-//  TaskHandle_t Task_Handle2;
+TaskHandle_t Task_Handle2;
 
 void setup() {
   Serial2.begin(115200);
