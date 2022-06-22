@@ -16,7 +16,8 @@ X and Y vector (or Magnitude, Theta) are transformed to the three motor RPMs.
 This functionality is added for the control of robot via ROS running your smart phone.
 
 ## Video demo
-![](Images/Videochinh.mp4)
+[Video Demo](https://www.youtube.com/watch?v=WiIC_UjOM_0) 
+
 Contact us if you have any problem
 
 ## Authors
@@ -27,10 +28,7 @@ Contributors names and contact info
 * [Phan Ben](https://www.facebook.com/benphan110) - Email: phanben110@gmail.com - Da Nang University of Technology
 
 
-## License
-
-This project is licensed under the BK Maker AS Team
-
 ## Acknowledgments
 
 * [Tuning a PID Controller with Genetic Algorithms](https://www.youtube.com/watch?v=S5C_z1nVaSg&t=2s)
+* [PID Speed and PID position](https://www.youtube.com/watch?v=S5C_z1nVaSg&t=2s](http://arduino.vn/result/5401-pid-speed-position-control)
