@@ -3,6 +3,7 @@
 # Project Title
 
 Vectoring code for a three wheel omni chassis written for Arduino Microcontroller.   
+![](Images/screenshot_1655914351.png)
 
 ## DC Motor Speed Control
 Motor speed control using encoders. Encoder are connected to the hardware interrupt of the microcontroller(Arduino Mega). A timer using the timming interrupt service routine is used to measure the motor rotation speed. System Identification is performed to approximate the DC motors as 2nd order system. PID controller is implemented for speed control.<br/>
