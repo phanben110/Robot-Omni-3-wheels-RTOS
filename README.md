@@ -27,6 +27,10 @@ Contributors names and contact info
 
 
 * [Phan Ben](https://www.facebook.com/benphan110) - Email: phanben110@gmail.com - Da Nang University of Technology
+* [Dương Hoang Thanh Trúc](https://www.facebook.com/yul.duonqq)
+* [Nguyễn Hải Đức](https://www.facebook.com/duc.nguyenhai741) 
+* [Phạm Thành Long](https://www.facebook.com/mrlong2k) 
+* [Nguyễn Quốc Nhân](https://www.facebook.com/profile.php?id=100007475868554)
 
 
 ## Acknowledgments
